@@ -1,0 +1,10 @@
+out.total_time::(in.out_time - in.in_time)/3600;
+
+---multiple in and out
+1.reformat
+out.total_time::(in.out_time - in.in_time)/3600;
+
+2.rollup
+
+out.total_work_time :: sum(in.total_time)
+
