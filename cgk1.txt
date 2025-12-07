@@ -1,0 +1,18 @@
+initialise
+temp.rank=0;
+temp.dept='';
+--transform
+if(temp.dept!=in.dept || temp.dept=="")
+begin
+temp.rank=1;
+temp.dept=i.dept;
+else
+temp.rank=temp.rank+1;
+end
+
+computation/finalisation
+
+out.rank::temp.rank;
+
+--FBE
+rank<=3;
